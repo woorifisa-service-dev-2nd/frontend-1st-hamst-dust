@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marhey:wght@600&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <style>
+      
+      body {
+        font-family: 'Marhey', sans-serif;
+
+      }
+
+      table {
+        display : flex;
+        flex-direction: row;
+        align-items : center;
+        justify-content: center;
+        margin : auto;
+
+        position : relative;
+        bottom : 250px;
+
+
+      }
+
+      td {
+        margin : auto;
+        height : 200px;
+        align-items :last baseline;
+      }
+
+
+      button {
+        display : flex;
+        flex-direction: row;
+        width : 60px;
+        border : dashed;
+        border-width : 5px;
+        width: 180px;
+        height: 64px ;
+        font-size: 20px; 
+        line-height: 1.8; 
+        align-items: center;
+        justify-content: center;
+        
+      }
+      
+      .upper {
+        display : flex;
+        justify-content: space-between;
+        margin : auto;
+        align-items: upper;
+      }
+
+
+      .buttons {
+        
+        display : flex;
+        width : 30%;
+        align-items: center;
+        justify-content: space-between;
+        margin : auto;
+        position : relative;
+        top : 300px;
+        font-family: 'Marhey', sans-serif;
+        
+      }
+
+      .result {
+        height:auto;
+        width : auto;
+        font-size : 45px;
+        padding : 15px;
+        display : flex;
+        flex-grow: auto;
+        align-items: center;
+        justify-content: center;
+        margin : auto;
+        position : relative;
+        top : 250px;
+        font-family: 'Marhey', sans-serif;
+      }
+
+    </style>
+
+</head>
+<body>
+
+  <div class = 'upper'> <p>제목</p>
+    <div class = 'results'>
+        <p>score : <span id = success>0</span></p>
+        <p></p>
+        </div>
+    <img src="representativeham.jpg"></div>
+
+
+  <div class = 'dust' id = 'dust'>
+    <table>
+        <tr><!-- 첫번째 줄 시작 -->
+            <td><img id = 'num1' src="dust.png" onclick = "func()" ></td>
+            <td><img id = 'num2' src="dust.png" onclick="func()"></td>
+            <td><img id = 'num3' src="dust.png" onclick="func()"></td>
+        </tr><!-- 첫번째 줄 끝 -->
+        <tr><!-- 두번째 줄 시작 -->
+            <td><img id = 'num4' src="dust.png" onclick="func()"></td>
+            <td><img id = 'num5' src="dust.png" onclick="func()"></td>
+            <td><img id = 'num6' src="dust.png" onclick="func()"></td>
+        </tr><!-- 두번째 줄 끝 -->
+        <tr>
+            <td><img id = 'num7'src="dust.png" onclick="func()"></td>
+            <td><img id = 'num8'src="dust.png" onclick="func()"></td>
+            <td><img id = 'num9'src="dust.png" onclick="func()"></td>
+        </tr>
+        </table>
+  </div>
+
+</body>
+</html>
