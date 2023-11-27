@@ -8,14 +8,9 @@ function func() {
     }
 }
 
-//document.getElementById('num1').addEventListener('onclick',func());
-
 function random() {
         let rannum = Math.floor(Math.random() * 10);
         document.getElementById('num'+rannum).setAttribute("src","hamst.png");
-        sleep(300);
 }
 
-while (true) {
-    random();
-}
+random();
