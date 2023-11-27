@@ -4,6 +4,7 @@ function func1() {
     if (num==1) {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)+1;
         document.getElementById('num1').setAttribute("src","dust.png");
+        random();
     }
     else {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)-1;
@@ -15,6 +16,7 @@ function func2() {
     if (num==2) {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)+1;
         document.getElementById('num2').setAttribute("src","dust.png");
+        random();
     }
     else {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)-1;
@@ -25,6 +27,7 @@ function func3() {
     if (num==3) {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)+1;
         document.getElementById('num3').setAttribute("src","dust.png");
+        random();
     }
     else {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)-1;
@@ -35,6 +38,7 @@ function func4() {
     if (num==4) {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)+1;
         document.getElementById('num4').setAttribute("src","dust.png");
+        random();
     }
     else {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)-1;
@@ -45,6 +49,7 @@ function func5() {
     if (num==5) {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)+1;
         document.getElementById('num5').setAttribute("src","dust.png");
+        random();
     }
     else {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)-1;
@@ -55,6 +60,7 @@ function func6() {
     if (num==6) {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)+1;
         document.getElementById('num6').setAttribute("src","dust.png");
+        random();
     }
     else {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)-1;
@@ -65,6 +71,7 @@ function func7() {
     if (num==7) {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)+1;
         document.getElementById('num7').setAttribute("src","dust.png");
+        random();
     }
     else {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)-1;
@@ -75,6 +82,7 @@ function func8() {
     if (num==8) {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)+1;
         document.getElementById('num8').setAttribute("src","dust.png");
+        random();
     }
     else {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)-1;
@@ -85,6 +93,7 @@ function func9() {
     if (num==9) {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)+1;
         document.getElementById('num9').setAttribute("src","dust.png");
+        random();
     }
     else {
         document.getElementById('success').innerText = parseInt(document.getElementById('success').innerText)-1;
@@ -94,7 +103,8 @@ function func9() {
 
 function random() {
         let rannum = Math.floor(Math.random() * 10);
-        document.getElementById('num'+rannum).setAttribute("src","hamst.png");
+        let newid = 'num' + rannum;
+        document.getElementById(newid).setAttribute("src","hamst.png");
         num = rannum;
 }
 
